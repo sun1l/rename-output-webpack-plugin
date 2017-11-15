@@ -5,7 +5,7 @@ Webpack plugin to custom rename each outfile files / chunks generated during bui
 [![GitHub issues](https://img.shields.io/github/issues/sun1l/rename-output-webpack-plugin.svg)](https://github.com/sun1l/rename-output-webpack-plugin/issues)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/sun1l/rename-output-webpack-plugin/master/LICENSE)
 
-[Installation](#Installation) |
+[Installation](#installation) |
 [Usage](#usage) |
 [License](#license)
 
@@ -55,7 +55,7 @@ Time: 1812ms
 framework-7aa4bcb22d7fa4791dd8.js   271 kB       3  [emitted]  [big]  core
 ```
 
-## Using `[version]`
+### Using [version]
 
 In Webpack configuration (webpack.config.js), [output.filename](https://webpack.js.org/configuration/output/#output-filename) supports following substitutions:
 * [hash]
@@ -64,7 +64,7 @@ In Webpack configuration (webpack.config.js), [output.filename](https://webpack.
 * [id]
 * [query]
 
-This plugin adds one more substitution `[version]`. _[version]_ allow you to use version of dependency within your output bundle filename. For e.g. If you are using jquery and chunking it separately, you can add _[version]_ to ensure right version (from jquery module package.json) is added within output filename.
+This plugin adds one more substitution `[version]`. `[version]` allow you to use version of dependency within your output bundle filename. For e.g. If you are using jquery and chunking it separately, you can add `[version]` to ensure right version (from jquery module package.json) is added within output filename.
 
 ```javascript
 module.exports = {
